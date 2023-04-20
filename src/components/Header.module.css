@@ -1,3 +1,4 @@
-h2 {
+h1 {
     padding: calc(2rem + 1vmin);
+    font-size: calc(32px + 2vmin);
 }
