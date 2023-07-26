@@ -1,7 +1,7 @@
 import classes from './Text.module.css';
 
 const Text = (props) => {
-    return <p>{props.text}</p>
+    return <div className={`${classes.statText} ${props.className}`}>{props.text}</div>
 }
 
 export default Text;

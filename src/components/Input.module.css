@@ -1,0 +1,33 @@
+.numberInput {
+
+    /* Firefox */
+    -moz-appearance: textfield;
+
+    /* WebKit */
+    -webkit-appearance: none;
+
+    /* For IE10/11 */
+    appearance: textfield;
+
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: calc(14px + 2vmin);
+    padding-left: 1rem;
+    color: rgb(232, 230, 227);
+    width: 68px;
+}
+
+.numberInput::-webkit-inner-spin-button,
+.numberInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.statText {
+    padding: 0;
+}

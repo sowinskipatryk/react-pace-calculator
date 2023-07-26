@@ -4,3 +4,7 @@ li {
     text-align: center;
     align-items: center;
 }
+
+.noPadding {
+    padding: 0;
+}

@@ -6,12 +6,13 @@ const Sliders = (props) => {
 
     const sliders = [];
 
-    for (let i = 0; i < 24; i++) {
+    for (let i = 0; i < props.slidersNum; i++) {
       sliders.push(
         <Slider
           key={i}
           id={i}
-          onChange={props.onChange}
+          stepData={props.stepData[i]}
+          handleSpeedChange={props.handleSpeedChange}
         />
       );
     }
