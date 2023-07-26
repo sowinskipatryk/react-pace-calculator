@@ -2,6 +2,7 @@ import classes from "./Slider.module.css";
 import { useRef, useState } from "react";
 
 const Slider = (props) => {
+  const { pace, time } = props.stepData  || {};
   const ref = useRef(null);
   const [speed, setSpeed] = useState(10);
 
@@ -24,7 +25,9 @@ const Slider = (props) => {
         onChange={onChangeHandler}
       />
       <label htmlFor={`slider-${props.id}`}>
-        <p>{speed}</p>
+        <p>{props.id === 0 ? 'v': ''} {speed}</p>
+        <p>{props.id === 0 ? 's': ''} {(speed * time / 60).toFixed(2)}</p>
+        <p>{props.id === 0 ? 't': ''} {time}</p>
       </label>
     </div>
   );
