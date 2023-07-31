@@ -50,6 +50,10 @@ const AppBox = () => {
         }
       }
 
+      for (let i = 0; i < stepsNum - 1; i++) {
+        newStepData[i].time = initialValues.stepTime;
+      }
+
       const lastIndex = newStepData.length - 1;
       const lastStep = newStepData[lastIndex];
       const remainder = runTime % initialValues.stepTime;
