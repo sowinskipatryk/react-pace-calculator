@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 const initialValues = {
   totalDuration: 60.0,
   stepPace: 10.0,
-  stepTime: 2.5,
+  stepTime: 1.0,
 };
 
 const AppBox = () => {

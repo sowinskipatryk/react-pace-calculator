@@ -1,15 +1,21 @@
 import classes from "./Slider.module.css";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const Slider = (props) => {
   const { pace, time } = props.stepData  || {};
   const ref = useRef(null);
-  const [speed, setSpeed] = useState(10);
+  const [speed, setSpeed] = useState(pace || 10);
 
   const onChangeHandler = (e) => {
     setSpeed(e.target.value);
     props.handleSpeedChange(props.id, parseFloat(e.target.value));
   };
+
+  useEffect(() => {
+    if (pace !== undefined) {
+      setSpeed(pace);
+    }
+  }, [pace]);
 
   return (
     <div className={classes.sliderContainer}>

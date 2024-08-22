@@ -1,4 +1,7 @@
 .sliderContainer {
     display: flex;
     flex-direction: row;
+    text-align: center;
+    width: 90vw;
+    overflow-x: auto;
 }

@@ -7,7 +7,7 @@
 
 .slider {
     height: 12rem;
-    width: calc(1rem + ((100vw - 500px) / 100) * 1.5); /* 1.75rem */
+    width: 40px;
 }
 
 input {
@@ -15,5 +15,6 @@ input {
 }
 
 label {
-    font-size: calc(0.6rem + ((100vw - 500px) / 100) * 0.5);
+    font-size: 12px;
+    width: 40px;
 }
